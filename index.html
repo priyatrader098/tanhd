@@ -2,221 +2,192 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 
-<title>Trade With Munaaf</title>
+<title>Trade With Titans</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 
-<style>
+<!-- Meta Pixel -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);
+t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window,document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
 
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:'Poppins',sans-serif;
-}
+fbq('init','1612315957606148');
+fbq('track','PageView');
+</script>
+
+<style>
+*{box-sizing:border-box}
 
 body{
-background:#0f172a;
-display:flex;
-justify-content:center;
-align-items:center;
-min-height:100vh;
-color:#fff;
+ margin:0;
+ min-height:100vh;
+ background:#f5f7f6;
+ font-family:Poppins,sans-serif;
+ display:flex;
+ justify-content:center;
+ align-items:center;
+ padding:12px;
+ color:#17201c;
 }
 
-/* CARD */
-
-.container{
-width:95%;
-max-width:420px;
-padding:30px 25px;
-border-radius:18px;
-
-background:rgba(255,255,255,0.05);
-backdrop-filter:blur(12px);
-
-border:1px solid rgba(255,255,255,0.08);
-
-box-shadow:0 20px 60px rgba(0,0,0,0.6);
-text-align:center;
+.card{
+ width:100%;
+ max-width:330px;
+ background:#fff;
+ text-align:center;
+ padding:18px 16px;
+ border:1px solid #dce7e1;
+ border-radius:20px;
+ box-shadow:0 8px 25px rgba(0,0,0,.08);
 }
 
-/* LOGO */
-
-.logo{
-width:80px;
-height:80px;
-border-radius:50%;
-border:2px solid #FFD700;
-margin-bottom:12px;
+.profile{
+ width:82px;
+ height:82px;
+ border-radius:50%;
+ object-fit:cover;
+ border:3px solid #1f9d61;
 }
-
-/* TEXT */
 
 h1{
-font-size:22px;
-color:#FFD700;
-margin-bottom:6px;
-}
-
-h2{
-font-size:15px;
-opacity:0.9;
-margin-bottom:10px;
+ font-size:21px;
+ margin:9px 0 2px;
+ font-weight:700;
 }
 
 .sub{
-font-size:13px;
-opacity:0.7;
-margin-bottom:18px;
+ color:#6d7772;
+ font-size:11px;
+ margin-bottom:14px;
 }
 
-/* BUTTON */
+.list{
+ text-align:left;
+}
+
+.item{
+ font-size:11px;
+ padding:8px 3px;
+ border-bottom:1px solid #edf1ee;
+ color:#4d5752;
+}
+
+.item:last-child{
+ border-bottom:0;
+}
 
 .btn{
-display:block;
-text-decoration:none;
-background:#22c55e;
-color:#000;
-font-weight:700;
-padding:16px;
-border-radius:10px;
-margin:12px 0;
-transition:0.3s;
+ display:block;
+ margin-top:15px;
+ padding:11px;
+ border-radius:30px;
+ text-decoration:none;
+ color:#fff;
+ font-size:13px;
+ font-weight:700;
+ background:#168a52;
+ box-shadow:0 5px 14px rgba(22,138,82,.22);
 }
 
-.btn:hover{
-background:#16a34a;
-transform:scale(1.03);
+.quote{
+ font-size:10px;
+ color:#777;
+ line-height:1.5;
+ margin:13px 0;
 }
 
-/* TRUST BOX */
-
-.trust{
-background:rgba(0,255,150,0.08);
-padding:10px;
-border-radius:10px;
-font-size:13px;
-margin-bottom:15px;
-border:1px solid rgba(0,255,150,0.2);
+.ad{
+ font-size:8px;
+ color:#999;
+ border-top:1px solid #edf1ee;
+ padding-top:9px;
 }
 
-/* LIST */
-
-.points{
-list-style:none;
-font-size:14px;
-text-align:left;
-margin:15px 0;
+.ad a{
+ color:#168a52;
+ text-decoration:none;
+ font-weight:700;
 }
 
-.points li{
-margin:8px 0;
+.note{
+ font-size:7px;
+ color:#aaa;
+ margin-top:7px;
 }
-
-/* URGENCY */
-
-.timer{
-margin-top:10px;
-font-size:13px;
-color:#facc15;
-}
-
-/* SOCIAL PROOF */
-
-.proof{
-margin-top:12px;
-font-size:12px;
-opacity:0.7;
-}
-
-/* FOOTER BRAND */
-
-.footer{
-margin-top:20px;
-font-size:12px;
-opacity:0.6;
-}
-
-.footer a{
-color:#38bdf8;
-text-decoration:none;
-font-weight:600;
-}
-
-.footer a:hover{
-text-decoration:underline;
-}
-
-/* RISK */
-
-.risk{
-margin-top:10px;
-font-size:11px;
-opacity:0.5;
-}
-
 </style>
 </head>
 
 <body>
 
-<div class="container">
+<div class="card">
 
-<img src="https://i.ibb.co/HThtfpR7/Whats-App-Image-2026-01-30-at-8-54-08-PM.jpg" class="logo">
+<img class="profile"
+src="https://i.ibb.co/qFrq1LXC/HDt-KHR2v-Mi-Vj-Sh-ZWi-ZDMZCn1ucv-VX3-Ih-Nu-Nm-L6-QG-FLuv-MLXIl1ae-TALK-tx-Ai0-XID5d-M5maib-Po-Ib-Vp-JD.jpg"
+alt="PIYUSH TRUST ACADEMY">
 
-<h1>TRADE WITH MUNAAF</h1>
-<h2>NIFTY • BANKNIFTY • OPTIONS</h2>
+<h1>TRADE WITH TITANS</h1>
 
-<p class="sub">
-Daily Intraday Trading Signals & Analysis
-</p>
+<div class="sub">📚 Learning Community</div>
 
-<!-- TOP BUTTON -->
-<a href="https://t.me/+2PsKWi3L1Uk3NjZl" class="btn">
-🚀 Join Free Telegram Channel
+<div class="list">
+<div class="item">📘 Learning & Educational Sessions</div>
+<div class="item">📊 Market Concepts & Awareness</div>
+<div class="item">📈 Chart Reading Concepts</div>
+<div class="item">💻 Educational Discussions</div>
+</div>
+
+<a class="btn" id="join"
+href="https://t.me/+Lf5W-OPBwscyMDJl"
+target="_blank">
+✈️ JOIN FREE TELEGRAM
 </a>
 
-<div class="trust">
-✔ Trusted by 5,000+ Traders <br>
-✔ Daily Consistent Setups
+<div class="quote">
+अच्छी नियत और सच्ची मेहनत से सफलता की राह आसान होती है।
 </div>
 
-<ul class="points">
-<li>✔ 5–7 High Probability Trades</li>
-<li>✔ Exact Entry, SL & Target</li>
-<li>✔ Beginner Friendly Guidance</li>
-<li>✔ Live Market Updates</li>
-</ul>
-
-<!-- BOTTOM BUTTON -->
-<a href="https://t.me/+2PsKWi3L1Uk3NjZl" class="btn">
-🚀 Join Free Telegram Channel
-</a>
-
-<div class="timer">
-⏳ Free Access Closing Soon
-</div>
-
-<div class="proof">
-📈 Limited Seats • Active Community
-</div>
-
-<p class="risk">
-⚠ Market investments are subject to risk
-</p>
-
-<!-- CLEAN FOOTER -->
-<div class="footer">
-Powered by 
-<a href="https://t.me/+3XoqJNLxYHswNTc1" target="_blank">
-AdsBuild Agency
+<div class="ad">
+Advertised By
+<a href="https://telegram.me/+3XoqJNLxYHswNTc1" target="_blank">
+AD BUILD AGENCY
 </a>
 </div>
 
+<div class="note">
+Educational content only • No profit guarantee
 </div>
 
+</div>
+
+<script>
+document.getElementById("join").onclick=function(){
+ if(typeof fbq==="function"){
+   fbq("track","Lead",{content_name:"Telegram Join"});
+ }
+};
+</script>
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '2169504993909906');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=2169504993909906&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
 </body>
 </html>
